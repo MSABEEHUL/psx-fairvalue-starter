@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>PSX Fair-Value Screener</title>
+<style>
+body { font-family: system-ui, Arial, sans-serif; padding: 16px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; }
+th { cursor: pointer; background: #f2f2f2; }
+</style>
+</head>
+<body>
+<h2>PSX Fair-Value Screener (PE-based)</h2>
+<p>Click headers to sort. <em>Educational use only.</em></p>
+<div id="table"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>symbol</th>
+      <th>price</th>
+      <th>eps_latest</th>
+      <th>fair_value_pe</th>
+      <th>discount_vs_fair</th>
+      <th>sector_guess</th>
+      <th>source_url</th>
+      <th>eps_series</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PPL</td>
+      <td>202.41</td>
+      <td>33.82</td>
+      <td>338.2</td>
+      <td>0.670866</td>
+      <td>OIL &amp; GAS</td>
+      <td>https://dps.psx.com.pk/company/PPL</td>
+      <td>33.82|42.01|35.99|19.68|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>SAZEW</td>
+      <td>1980.06</td>
+      <td>270.26</td>
+      <td>2702.6</td>
+      <td>0.364908</td>
+      <td>AUTOMOBILE</td>
+      <td>https://dps.psx.com.pk/company/SAZEW</td>
+      <td>270.26|131.29|16.46|1.95|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>SYS</td>
+      <td>153.83</td>
+      <td>20.94</td>
+      <td>209.4</td>
+      <td>0.361243</td>
+      <td>TECHNOLOGY &amp;</td>
+      <td>https://dps.psx.com.pk/company/SYS</td>
+      <td>20.94|29.41|22.44|12.06|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>GHGL</td>
+      <td>44.58</td>
+      <td>5.90</td>
+      <td>59.0</td>
+      <td>0.323463</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/GHGL</td>
+      <td>5.9|6.75|8.1|6.05|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>HBL</td>
+      <td>300.87</td>
+      <td>38.70</td>
+      <td>387.0</td>
+      <td>0.286270</td>
+      <td>BANKS</td>
+      <td>https://dps.psx.com.pk/company/HBL</td>
+      <td>38.7|38.76|21.04|23.36|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>TGL</td>
+      <td>253.97</td>
+      <td>27.75</td>
+      <td>277.5</td>
+      <td>0.092649</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/TGL</td>
+      <td>27.75|25.41|14.63|24.05|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PSO</td>
+      <td>486.58</td>
+      <td>44.54</td>
+      <td>445.4</td>
+      <td>-0.084632</td>
+      <td>OIL &amp; GAS</td>
+      <td>https://dps.psx.com.pk/company/PSO</td>
+      <td>44.54|33.79|12.06|183.66|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>NETSOL</td>
+      <td>149.49</td>
+      <td>11.89</td>
+      <td>118.9</td>
+      <td>-0.204629</td>
+      <td>TECHNOLOGY &amp;</td>
+      <td>https://dps.psx.com.pk/company/NETSOL</td>
+      <td>11.89|15.76|14.63|10.19|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>DGKC</td>
+      <td>256.15</td>
+      <td>19.80</td>
+      <td>198.0</td>
+      <td>-0.227015</td>
+      <td>CEMENT</td>
+      <td>https://dps.psx.com.pk/company/DGKC</td>
+      <td>19.8|1.24|-8.3|6.78|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMAGE</td>
+      <td>28.42</td>
+      <td>1.99</td>
+      <td>19.9</td>
+      <td>-0.299789</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/IMAGE</td>
+      <td>1.99|1.91|2.06|2.02|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ENGRO</td>
+      <td>485.38</td>
+      <td>32.26</td>
+      <td>322.6</td>
+      <td>-0.335366</td>
+      <td>FERTILIZER</td>
+      <td>https://dps.psx.com.pk/company/ENGRO</td>
+      <td>32.26|36.79|32.14|28.29|3.0|2024.0|2.0|2024.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>LOTCHEM</td>
+      <td>27.90</td>
+      <td>1.75</td>
+      <td>17.5</td>
+      <td>-0.372760</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/LOTCHEM</td>
+      <td>1.75|3.35|6.68|3.07|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>HUBC</td>
+      <td>236.85</td>
+      <td>14.71</td>
+      <td>147.1</td>
+      <td>-0.378932</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/HUBC</td>
+      <td>14.71|26.12|23.85|16.29|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>BWCL</td>
+      <td>655.40</td>
+      <td>40.02</td>
+      <td>400.2</td>
+      <td>-0.389381</td>
+      <td>CEMENT</td>
+      <td>https://dps.psx.com.pk/company/BWCL</td>
+      <td>40.02|23.09|19.94|17.17|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>ILP</td>
+      <td>73.42</td>
+      <td>3.84</td>
+      <td>38.4</td>
+      <td>-0.476982</td>
+      <td>TEXTILE</td>
+      <td>https://dps.psx.com.pk/company/ILP</td>
+      <td>3.84|11.25|14.39|8.82|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>LUCK</td>
+      <td>474.12</td>
+      <td>22.59</td>
+      <td>225.9</td>
+      <td>-0.523538</td>
+      <td>CEMENT</td>
+      <td>https://dps.psx.com.pk/company/LUCK</td>
+      <td>22.59|18.91|43.06|47.31|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PAEL</td>
+      <td>59.30</td>
+      <td>2.72</td>
+      <td>27.2</td>
+      <td>-0.541315</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/PAEL</td>
+      <td>2.72|1.5|1.33|2.89|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PAEL</td>
+      <td>59.30</td>
+      <td>2.72</td>
+      <td>27.2</td>
+      <td>-0.541315</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/PAEL</td>
+      <td>2.72|1.5|1.33|2.89|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>INIL</td>
+      <td>226.99</td>
+      <td>8.37</td>
+      <td>83.7</td>
+      <td>-0.631261</td>
+      <td>ENGINEERING</td>
+      <td>https://dps.psx.com.pk/company/INIL</td>
+      <td>8.37|11.17|17.23|16.35|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>MUGHAL</td>
+      <td>88.34</td>
+      <td>2.83</td>
+      <td>28.3</td>
+      <td>-0.679647</td>
+      <td>ENGINEERING</td>
+      <td>https://dps.psx.com.pk/company/MUGHAL</td>
+      <td>2.83|5.96|10.37|16.12|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>EPCL</td>
+      <td>30.87</td>
+      <td>0.45</td>
+      <td>4.5</td>
+      <td>-0.854227</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/EPCL</td>
+      <td>0.45|9.45|12.39|16.32|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>EPCL</td>
+      <td>30.87</td>
+      <td>0.45</td>
+      <td>4.5</td>
+      <td>-0.854227</td>
+      <td>None</td>
+      <td>https://dps.psx.com.pk/company/EPCL</td>
+      <td>0.45|9.45|12.39|16.32|2.0|2025.0|1.0|2025.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>TRG</td>
+      <td>74.77</td>
+      <td>-56.56</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TECHNOLOGY &amp;</td>
+      <td>https://dps.psx.com.pk/company/TRG</td>
+      <td>-56.56|-2.45|-9.13|47.4|3.0|2025.0|2.0|2025.0</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<script>
+// Simple table sorting
+(function() {
+  const tbl = document.querySelector("table");
+  const get = (r, c) => r.children[c].innerText || "";
+  let asc = true;
+
+  tbl.querySelectorAll("th").forEach((th, idx) => {
+    th.addEventListener("click", () => {
+      const rows = [...tbl.querySelectorAll("tbody tr")];
+      rows.sort((a, b) => {
+        const A = get(a, idx).replace(/[^0-9.\-]/g, "");
+        const B = get(b, idx).replace(/[^0-9.\-]/g, "");
+        const aN = parseFloat(A), bN = parseFloat(B);
+        const isNum = !isNaN(aN) && !isNaN(bN);
+        if (isNum) return asc ? aN - bN : bN - aN;
+        return asc ? get(a, idx).localeCompare(get(b, idx))
+                   : get(b, idx).localeCompare(get(a, idx));
+      });
+      rows.forEach(r => tbl.tBodies[0].appendChild(r));
+      asc = !asc;
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
